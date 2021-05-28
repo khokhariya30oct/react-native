@@ -2,25 +2,33 @@ import React from "react";
 import { Text, StyleSheet, View ,Button,TouchableOpacity } from "react-native";
 
 const HomeScreen = ({navigation}) => {
-
-  this.navigateScreen = (screenName) => {
-    navigation.navigate(screenName);
-  }
-
   return (
     <View>
       <Text style={styles.text}>Hey There ! Welcome to learning app session</Text>
       <Button
-        onPress={() => navigateScreen("Component")}
+        onPress={() => navigation.navigate("Component")}
         title="Go to Components" />
 
       <Button
-      onPress={() => navigateScreen("ListScreen")}
+      onPress={() => navigation.navigate("ListScreen")}
       title="Go to List" />
 
       <Button
-      onPress={() => navigateScreen("ImageScreen")}
+      onPress={() => navigation.navigate("ImageScreen")}
       title="Go to ImageScreen" />
+
+      <Button
+      onPress={() => navigation.navigate("CounterScreen")}
+      title="Go to Counter Demo"/>
+
+      <Button
+      onPress={() => navigation.navigate("ColorScreen")}
+      title="Go to Color Demo"/>
+
+      <Button
+      onPress={() => navigation.navigate("RgbScreen")}
+      title="Go to RGB Color mixure screen"/>
+
       {/* <TouchableOpacity
         style = {styles.verticalMargin}
         onPress={() => navigation.navigate("ListScreen")}>
