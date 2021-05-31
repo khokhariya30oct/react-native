@@ -29,6 +29,14 @@ const HomeScreen = ({navigation}) => {
       onPress={() => navigation.navigate("RgbScreen")}
       title="Go to RGB Color mixure screen"/>
 
+      <Button
+      onPress={() => navigation.navigate("InputTextScreen")}
+      title="Go to Input text screen"/>
+
+      <Button
+      onPress={() => navigation.navigate("BoxScreen")}
+      title="Go to Box screen"/>
+
       {/* <TouchableOpacity
         style = {styles.verticalMargin}
         onPress={() => navigation.navigate("ListScreen")}>
